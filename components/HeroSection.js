@@ -1,15 +1,14 @@
-import '../styles/HeroSection.module.css';
-
+import heroSectionStyles from '../styles/HeroSection.module.css';
+import {Button} from './Button';
 const HeroSection = () => {
     return (
-        <div className='hero-container'>
-
-            <video src='/videos/video-1.mp4' autoPlay loop muted/>
-            <h1> ADVENTURE AWAITS</h1>
-            <p>What are you waitting for ?</p>
-            <div className='hero-btns'>
+        <div className={heroSectionStyles.hero_container}>
+            <video className={heroSectionStyles.video} src='../videos/video-1.mp4' autoPlay loop muted/>
+            <h1>ADVENTURE AWAITS</h1>
+            <p >What are you waitting for ?</p>
+            <div className={heroSectionStyles.hero_btns}>
                 <Button
-                    className='btns'
+                    className={heroSectionStyles.btns}
                     buttonStyle='btn--outline'
                     buttonSize='btn--large'
                 >
@@ -17,7 +16,7 @@ const HeroSection = () => {
                 </Button>
 
                 <Button
-                    className='btns'
+                    className={heroSectionStyles.btns}
                     buttonStyle='btn--outline'
                     buttonSize='btn--large'
                 >

@@ -1,5 +1,9 @@
 import Head from 'next/head'
+import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
+import Cards from '../components/Cards';
+import Footer from '../components/Footer';
+
 export default function Home() {
   return (
       <div>
@@ -8,8 +12,13 @@ export default function Home() {
           <meta name='keywords' content='web'/>
       </Head>
 
+          <Navbar/>
 
-     <h1> test </h1>
+          <HeroSection />
+
+          <Cards/>
+
+          <Footer/>
     </div>
   )
 }
